@@ -13,6 +13,7 @@ set ignorecase
 set smartcase
 set noeb vb t_vb=
 au GUIEnter * set vb t_vb=
+set incsearch
 
 " set the runtime path to include Vundle and initialize
 " Vundle
