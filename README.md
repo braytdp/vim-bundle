@@ -2,7 +2,7 @@
 
 ## Installation Guide
 
-1. **Copy .vimrc file and .vim folder to your user's folder**
+- **Copy .vimrc file and .vim folder to your user's folder**
 ```{r, engine='bash', count_lines}
 cp .vimrc ~/
 ```
@@ -11,27 +11,27 @@ cp .vim ~/
 ```
 
 
-2. **Enter vim:**
+- **Enter vim:**
 ```{r, engine='bash', count_lines}
 vim
 ```
 
-3. **On vim, install plugins:**
+- **On vim, install plugins:**
 ```{r, engine='bash', count_lines}
 :PluginInstall
 ```
 
-4. **Create folder mvim folder**
+- **Create folder mvim folder**
 ```{r, engine='bash', count_lines}
 sudo mkdir /usr/local/bin/mvim
 ```
 
-5. **Copy mvim to mvim folder**
+- **Copy mvim to mvim folder**
 ```{r, engine='bash', count_lines}
 cp mvim /usr/local/bin/mvim/
 ```
 
-6. **Create a symlink:**
+- **Create a symlink:**
 ```{r, engine='bash', count_lines}
 cd /usr/local/bin/mvim/
 ```
@@ -39,11 +39,11 @@ cd /usr/local/bin/mvim/
 ln -s /usr/local/bin/mvim vim
 ```
 
-7. **Install Node.js and npm**
+- **Install Node.js and npm**
 
-Enter https://docs.npmjs.com/getting-started/installing-node and follow the steps
+  - Enter https://docs.npmjs.com/getting-started/installing-node and follow the steps
 
-8. **Compile YouCompleteMe**
+- **Compile YouCompleteMe**
 ```{r, engine='bash', count_lines}
 cd ~/.vim/bundle/YouCompleteMe
 ```
