@@ -2,7 +2,7 @@
 
 ## Installation Guide
 
-- **Copy .vimrc file and .vim folder to your user's folder**
+- **Copy .vimrc file and .vim folder**
 ```{r, engine='bash', count_lines}
 cp .vimrc ~/
 ```
