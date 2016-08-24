@@ -16,7 +16,6 @@ au GUIEnter * set vb t_vb=
 set incsearch
 set laststatus=2
 set backspace=2
-set statusline=%f\ -\ Column:\ %v\ Line:\ %l/%L
 
 " set the runtime path to include Vundle and initialize
 " Vundle
@@ -27,14 +26,14 @@ call vundle#begin()
 " PLUGINS
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tomtom/tcomment_vim'
 Plugin 'tpope/vim-rails'
-Plugin 'ervandew/supertab'
-Plugin 'valloric/youcompleteme'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-fugitive'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'janko-m/vim-test'
 
 " All of your Plugins must be added before the following line
 call vundle#end()
@@ -44,21 +43,5 @@ filetype plugin indent on
 " Syntax colorscheme
 colorscheme jellybeans
 
-" Syntastic configs
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-" make YCM compatible with UltiSnips (using supertab)
-let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
-let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
-let g:SuperTabDefaultCompletionType = '<C-n>'
-
-" better key bindings for UltiSnipsExpandTrigger
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+nmap <silent> <leader>r :TestNearest<CR>
+nmap <silent> <leader>R :TestFile<CR>
