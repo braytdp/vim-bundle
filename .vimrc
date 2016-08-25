@@ -1,7 +1,6 @@
 set nocompatible
 
-" Configs
-filetype off
+" CONFIG
 syntax on
 set tabstop=2
 set softtabstop=2
@@ -16,15 +15,14 @@ au GUIEnter * set vb t_vb=
 set incsearch
 set laststatus=2
 set backspace=2
+set autoindent
 
-" set the runtime path to include Vundle and initialize
-" Vundle
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-" All of your Plugins must be added after the following line
+
 call vundle#begin()
 
 " PLUGINS
-
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-rails'
 Plugin 'kien/ctrlp.vim'
@@ -34,14 +32,27 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'janko-m/vim-test'
+Plugin 'Yggdroot/indentLine'
 
-" All of your Plugins must be added before the following line
 call vundle#end()
-
 filetype plugin indent on
 
-" Syntax colorscheme
+" COLORSTHEME
 colorscheme jellybeans
 
+" PLUGIN CONFIGS
+
+" Vim-Test
 nmap <silent> <leader>r :TestNearest<CR>
 nmap <silent> <leader>R :TestFile<CR>
+
+" Indent Lines
+let g:indentLine_char = '│'
+
+" GENERAL CONFIG
+
+" 80 Characters Bar
+if exists('+colorcolumn')
+  let &colorcolumn="80"
+  highlight ColorColumn ctermbg=236
+endif
