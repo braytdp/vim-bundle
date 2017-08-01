@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/braytdp/workspace/iugu/platform/app/models'
+let g:netrw_dirhist_2='/Users/braytdp/workspace/iugu'
+let g:netrw_dirhist_3='/Users/braytdp/workspace/iugu/platform/app/use_codes'
+let g:netrw_dirhist_4='/Users/braytdp/workspace/iugu/platform/app/models/transactioner'
+let g:netrw_dirhist_5='/Users/braytdp/workspace/iugu/legacy-web-application/app/js/src/web-app/presenters'
+let g:netrw_dirhist_6='/Users/braytdp/workspace/iugu/signup/app/views/platform/accounts'
+let g:netrw_dirhist_7='/Users/braytdp/workspace/iugu/platform/app/views/operations/credit_card_transactions'
+let g:netrw_dirhist_8='/Users/braytdp/workspace/iugu/platform/app'
